@@ -22,6 +22,13 @@ func TestInsertionSort(t *testing.T) {
 	}
 }
 
+func TestShellSort(t *testing.T) {
+	shellSort(input)
+	if !reflect.DeepEqual(input, output) {
+		t.Errorf("shell sort failed, expected: %v, infact: %v", output, input)
+	}
+}
+
 func TestSelectionSort(t *testing.T) {
 	selectionSort(input)
 	if !reflect.DeepEqual(input, output) {

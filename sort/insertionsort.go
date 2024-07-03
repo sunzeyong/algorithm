@@ -7,7 +7,7 @@ package sort
 再将当前数字放在空出来的位置
 
 优化：
-1. 参考希尔排序
+1. 参考希尔排序: 分组插入 从len/2为增量到1为增量即完成排序
 */
 
 func insertionSort(input []int) {
