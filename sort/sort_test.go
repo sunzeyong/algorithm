@@ -35,3 +35,10 @@ func TestMergeSort(t *testing.T) {
 		t.Errorf("merge sort failed, expected: %v, infact: %v", output, input)
 	}
 }
+
+func TestQuickSort(t *testing.T) {
+	quickSort(input)
+	if !reflect.DeepEqual(input, output) {
+		t.Errorf("quick sort failed, expected: %v, infact: %v", output, input)
+	}
+}
