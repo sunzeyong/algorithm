@@ -28,3 +28,10 @@ func TestSelectionSort(t *testing.T) {
 		t.Errorf("selection sort failed, expected: %v, infact: %v", output, input)
 	}
 }
+
+func TestMergeSort(t *testing.T) {
+	mergeSort(input)
+	if !reflect.DeepEqual(input, output) {
+		t.Errorf("merge sort failed, expected: %v, infact: %v", output, input)
+	}
+}
